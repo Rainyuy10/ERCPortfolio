@@ -1,0 +1,236 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, blue, darkblue);
+    color: white;
+    padding: 8px 20px;
+}
+.left h1 {
+    margin: 0;
+    font-family:  sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.right a {
+    margin-left: 10px;
+    font-family: Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+.right img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.about-me {
+    padding: 20px;
+    margin-bottom: 20px; 
+    color: rgb(0, 0, 0);
+}
+.about-content {
+    display: flex;
+    align-items: center;
+}
+.image {
+    flex: 1;
+    margin-right: 20px;
+}
+.image img {
+    max-width: 100%;
+    height: auto;
+}
+.text {
+    flex: 3;
+}
+.text h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    font-style: italic; 
+    font-weight: 900;
+    color: blue;
+    letter-spacing: -2px;
+}
+.text p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+.text h3 {
+    font-size: 11px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+    color: aliceblue;
+    background-color: blue; 
+    display: inline-block; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+}
+.software-logos {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+.software-logos img {
+    max-width: 150px;
+    height: auto;
+    margin: 0 10px;
+}
+.gallery {
+    text-align: center;
+    padding: 20px;
+    margin-top: -50px; 
+    color: rgb(0, 0, 0);
+}
+.gallery-nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.gallery-nav button {
+  margin: 0 10px;
+  padding: 8px 16px;
+  background-color: rgb(59, 59, 255);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.gallery-nav button:hover {
+  background-color: rgb(29, 29, 204);
+}
+.content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.content.active {
+    display: block;
+    opacity: 1;
+}
+.gallery h2 {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 44px;
+    margin-bottom: 20px;
+    background-color: rgb(59, 59, 255); 
+    background-image: linear-gradient(to right, rgb(67, 67, 255), rgb(0, 0, 78));
+    color: white; 
+    display: inline-block; 
+    padding: 5px 0; 
+    border-radius: 5px; 
+    width: 100%; 
+    box-sizing: border-box; 
+    letter-spacing: -2px;
+    font-weight: 900;
+}
+.video-showcase h2, .digital-illustrations h2, .layout-graphics-design h2 {
+    background-color: transparent;
+    color: rgb(59, 59, 255);
+    
+}
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.image-grid a {
+    width: calc(33.33% - 20px);
+    height: 200px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image-grid a:hover img {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.image-grid img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+.video-showcase {
+    text-align: center;
+    padding: 20px;
+    margin-top: -70px; 
+    color: rgb(0, 0, 0);
+}
+.video-carousel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px; /* Adjust the gap between videos */
+}
+.video-carousel iframe {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+.contact {
+    background-color: blue;
+    background-image: linear-gradient(to right, rgb(67, 67, 255), rgb(0, 0, 78));
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 44px;
+    margin-bottom: 20px;
+    letter-spacing:-2px;
+    font-weight: 900;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.info p {
+    margin: 0;
+    font-size: 18px;
+}
+.other-links-title {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.other-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.other-links img {
+    width: 40px;
+    height: 40px;
+}
+.footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
